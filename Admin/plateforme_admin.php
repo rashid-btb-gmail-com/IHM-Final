@@ -427,7 +427,7 @@
                                             $select->execute(array($date));
                                         }
                                         
-                                            ?>
+                                     } ?>
                                      <div style="height: 400px; width: 700px; overflow: auto;">
                                     <table class="liste_biens" cellpadding="3" rules="all">
                                             <colgroup span="4" class="columns"></colgroup>
@@ -462,11 +462,12 @@
                                </div>
                                </form>
                                <?php
-                                }
+                                
                                         //********************  supprimer des rdv    **************************** */
-                                if(isset($_GET["action2"])){
+                                if(isset($_GET["action2"])){ 
+                                    $id=$_GET["id"];
                                         if($_GET["action2"]=="supprimer"){
-                                            $id=$_GET["id"];
+                                           
                                             $supprimer=$db->prepare("DELETE FROM rdv_confirmer WHERE id = $id");
                                             $supprimer->execute();
                                             ?>
@@ -477,8 +478,7 @@
                                         }
                                         //***************************modifier RDV ************************//
                                     if($_GET["action2"]=="modifier"){
-                                    
-
+                                        
                                         $select=$db->query("SELECT client FROM rdv_confirmer WHERE id=$id");
                                         $donnees=$select->fetch();
                                         ?>
@@ -492,16 +492,16 @@
                                                     <option value="heur">
                                                     </datalist> 
                                                 <br>
-                                                <input type="text" name="modification" placeholder="Modification" class="inp_insc" required><br>
+                                                <input type="text" name="modification2" placeholder="Modification" class="inp_insc" required><br>
                                                 <input type="submit" name="valider_modification" value="Valider">
 
                                                 <?php 
                                                     if(isset($_POST["valider_modification"])){
                                                         
                                                         $champ_modifier=$_POST["champ_modifier2"];
-                                                        $modification=$_POST['modification'];
+                                                        $modification=$_POST['modification2'];
                                                         echo $champ_modifier;
-                                                        $modifier=$db->prepare("UPDATE rdv_confirmer SET $champ_modifier2='$modification' WHERE id=$id");
+                                                        $modifier=$db->prepare("UPDATE rdv_confirmer SET $champ_modifier='$modification' WHERE id=$id");
                                                         $modifier->execute();
 
                                                         ?>

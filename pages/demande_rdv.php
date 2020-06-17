@@ -76,6 +76,7 @@ $nompre=$_SESSION["nom"].' '.$_SESSION["prenom"];
                              //insersion dans la base de donné
                              $insert=$db->prepare('INSERT INTO demande_rdv VALUES(NULL,?,?,?,?)');
                              $insert->execute(array($nompre,$_POST["lieu"],$_POST["date"],$_POST["time"]));
+                             echo("<script> alert(\"Votre demande as été envoyer\"); </script>");
                          }
                          ?>
                 </form>
