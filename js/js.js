@@ -184,37 +184,37 @@ function filtre_commune(){
 function style_onglet_admin() {
     var url=window.location.href;
     
-    if(url=="http://127.0.0.1/Projet-IHM-/admin/plateforme_admin.php?action=ajouter_bien"){
+    if(url=="http://127.0.0.1/IHM-final/admin/plateforme_admin.php?action=ajouter_bien"){
         document.getElementById("onglet1").style.borderLeft="17px #fa6014 solid";
         document.getElementById("onglet1").style.color="#fa6014";
         document.getElementById("onglet1").style.backgroundColor="#313131";
     }
-    if(url=="http://127.0.0.1/Projet-IHM-/admin/plateforme_admin.php?action=gerer_biens"){
+    if(url=="http://127.0.0.1/IHM-final/admin/plateforme_admin.php?action=gerer_biens"){
         document.getElementById("onglet2").style.borderLeft="17px #fa6014 solid";
         document.getElementById("onglet2").style.color="#fa6014";
         document.getElementById("onglet2").style.backgroundColor="#313131";
     }
-    if(url=="http://127.0.0.1/Projet-IHM-/admin/plateforme_admin.php?action=confirmer_annonces"){
+    if(url=="http://127.0.0.1/IHM-final/admin/plateforme_admin.php?action=confirmer_annonces"){
         document.getElementById("onglet3").style.borderLeft="17px #fa6014 solid";
         document.getElementById("onglet3").style.color="#fa6014";
         document.getElementById("onglet3").style.backgroundColor="#313131";
     }
-    if(url=="http://127.0.0.1/Projet-IHM-/admin/plateforme_admin.php?action=ajouter_rdv"){
+    if(url=="http://127.0.0.1/IHM-final/admin/plateforme_admin.php?action=ajouter_rdv"){
         document.getElementById("onglet4").style.borderLeft="17px #fa6014 solid";
         document.getElementById("onglet4").style.color="#fa6014";
         document.getElementById("onglet4").style.backgroundColor="#313131";
     }
-    if(url=="http://127.0.0.1/Projet-IHM-/admin/plateforme_admin.php?action=gerer_rdv"){
+    if(url=="http://127.0.0.1/IHM-final/admin/plateforme_admin.php?action=gerer_rdv"){
         document.getElementById("onglet5").style.borderLeft="17px #fa6014 solid";
         document.getElementById("onglet5").style.color="#fa6014";
         document.getElementById("onglet5").style.backgroundColor="#313131";
     }
-    if(url=="http://127.0.0.1/Projet-IHM-/admin/plateforme_admin.php?action=confirmer_rdv"){
+    if(url=="http://127.0.0.1/IHM-final/admin/plateforme_admin.php?action=confirmer_rdv"){
         document.getElementById("onglet6").style.borderLeft="17px #fa6014 solid";
         document.getElementById("onglet6").style.color="#fa6014";
         document.getElementById("onglet6").style.backgroundColor="#313131";
     }
-    if(url=="http://127.0.0.1/Projet-IHM-/admin/plateforme_admin.php?action=clients"){
+    if(url=="http://127.0.0.1/IHM-final/admin/plateforme_admin.php?action=clients"){
         document.getElementById("onglet7").style.borderLeft="17px #fa6014 solid";
         document.getElementById("onglet7").style.color="#fa6014";
         document.getElementById("onglet7").style.backgroundColor="#313131";

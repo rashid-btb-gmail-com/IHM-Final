@@ -443,7 +443,7 @@ color:black;
     .bienrdv{
         background-color: rgba(212, 212, 212, 0.9);
         width:400px;
-        height:384px;
+        height:395px;
         justify-self: right;
         margin-top: 40px;
         padding: 20px 10px 20px 10px;
@@ -584,6 +584,11 @@ bottom: 5cm;
     .pointdetail{
         padding:30px;
         font-family: inherit;
+        width:100%;
+    }
+    .pointdetail2{
+        padding:30px;
+        font-family: inherit;
         width:50%;
     }
     .suggcontainer{
@@ -616,6 +621,7 @@ bottom: 5cm;
         margin-top:40px;
         padding: 7px;
         border-radius: 0.5rem;
+        text-align:center;
     }
     .rdvdmdbien{
         color:white ;

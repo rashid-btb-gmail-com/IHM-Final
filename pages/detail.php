@@ -50,7 +50,7 @@ $choisie = $detail_bien->fetch();
 </div>
 <div class="infobox d-flex">
 <?php echo('<img class="imgdetail"src="../'. $choisie['lien_img'].'" alt="image du bien">') ?>
-<div class="pointdetail">
+<div class="pointdetail2">
 <h3><u>Informations:</u></h3>
 <?php echo('
 <p><b> Lieux : </b>'.$choisie['commune'].', '.$choisie['daira'].'</p> 
